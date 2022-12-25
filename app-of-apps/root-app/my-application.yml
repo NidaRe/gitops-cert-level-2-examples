@@ -25,10 +25,8 @@ spec:
     server: https://kubernetes.default.svc
     namespace: default
 
-  # Sync policy
   syncPolicy:
     automated:
       prune: true
+      allowEmpty: true
       selfHeal: true
-      allowEmpty: false
-  
